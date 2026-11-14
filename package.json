@@ -1,0 +1,40 @@
+{
+  "name": "dsh-context-console",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "DSH 上下文控制台：一个独立面板统一控制所有会话的上下文上限、默认思考等级、自动压缩阈值与工具结果裁剪阈值",
+  "keywords": [
+    "dsh",
+    "cordis",
+    "deepseek",
+    "context-window",
+    "compaction"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/songhanqing/dsh-context-console.git"
+  },
+  "homepage": "https://github.com/songhanqing/dsh-context-console#readme",
+  "author": "songhanqing",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "slots"
+      ]
+    }
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "license": "MIT"
+}

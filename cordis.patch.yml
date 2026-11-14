@@ -1,0 +1,7 @@
+# dsh-context-console bundle patch
+#
+# 一行宿主端本体；四组旋钮的状态存在 $DSH_HOME/dsh-context-console/state.json，
+# 不在配置树里，所以这一行不需要 config，升级/回滚都不会碰到你的模型配置。
+- insert:
+    - id: context-console
+      name: dsh-context-console
